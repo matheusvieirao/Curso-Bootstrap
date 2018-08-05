@@ -1,0 +1,18 @@
+instalar node js
+
+ir até a pasta raiz do projeto no prompt
+
+digitar:
+
+npm init // e dar varios enter
+
+npm install bootstrap // ou bootstrap seguido da versao desejada, exemplo bootstrap@4.0.0-beta.2
+
+npm install jquery // se estiver faltando jquery
+
+npm install popper.js 
+
+instalar sass (sass-lang.com/)
+
+sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compilados  // executar essa linha para compilar o site (antes dos : é a pasta dos arquivos scss a serem compilados e depois dos : são os arquivos css compilados)
+
