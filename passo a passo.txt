@@ -1,18 +1,29 @@
-instalar node js
+obs: tudo que vem depois de "$" é texto que deve ser digitado no terminal
+obs2: tudo que vem depois de "#" é um comentário sobre o código e não deve ser digitado no terminal
 
-ir até a pasta raiz do projeto no prompt
+INSTALANDO
 
-digitar:
+ir até a pasta raiz do projeto no prompt e digitar:
 
-npm init // e dar varios enter
+$ npm init #e dar varios enter
 
-npm install bootstrap // ou bootstrap seguido da versao desejada, exemplo bootstrap@4.0.0-beta.2
+$ npm install bootstrap #ou bootstrap seguido da versao desejada, exemplo bootstrap@4.0.0-beta.2
 
-npm install jquery // se estiver faltando jquery
+$ npm install jquery #se não tiver jquery no pc
 
-npm install popper.js 
+$ npm install popper.js 
 
-instalar sass (sass-lang.com/)
 
-sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compilados  // executar essa linha para compilar o site (antes dos : é a pasta dos arquivos scss a serem compilados e depois dos : são os arquivos css compilados)
+PARA ADD FONT AWESOME (Icones)
 
+colocar no cabeçalho:
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+side com mais instruçoes: https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+
+
+PARA COMPILAR OS ARQUIVOS
+
+instalar sass no site sass-lang.com/
+
+$ sass --watch node_modules\bootstrap\scss:node_modules\bootstrap\compilados   styles\scss:styles\css  #executar essa linha para compilar o site (antes dos : é a pasta dos arquivos scss a serem compilados e depois dos : são os arquivos css compilados)

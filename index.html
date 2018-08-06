@@ -9,7 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compilados/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/compilados/estilos.css">
+    <link rel="stylesheet" href="styles/css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
 
 </head>
 
@@ -278,13 +280,16 @@
 
     </div> <!-- container principal -->
     
+    
+    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4">Hora de relaxar!</h1>
-                    <p class="lead">Pronto, você já viu tudo o que poderia ver nesse site. Que tal escolher uma musiquinha e relaxaaaarrr agora?!</p>
+                    <h1 class="display-4">  Hora de relaxar! <i class="fas fa-music "></i>  </h1> 
+                    <p class="lead">Pronto, você já viu tudo o que poderia ver nesse site. Que tal escolher uma musiquinha e relaxaaaarrr agora?! </p>
+                    
                     <hr>
                 </div>
             </div>
@@ -292,15 +297,15 @@
             <div class="row">
                 <div class="col-12">
                     <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">The Legend of Zelda</a>
                         </li>
                         
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Animal Crossing</a>
                         </li>
                         
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Donkey Kong</a>
                         </li>
                     </ul>
@@ -441,9 +446,82 @@
             
         </div>
     </div>
+    
+    <!-- Formulário -->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"> Inscrição:</h1>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    
+                    <div class="form-row">
+                        
+                        <!-- <label for="inputNome"> Digite seu nome </label> -->
+                        <div class="form-group col-sm-5">
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <select id="inputSexo" class="form-control">
+                                <option selected>Feminino</option>
+                                <option>Masculino</option>
+                                <option>Prefiro não identificar</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="form-row">
+                        
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="form-row">
+                        
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputSenha" placeholder="Senha">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputSenha2" placeholder="Repetir Senha">
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="form-row">
+                        
+                        <div class="form-group mr-auto">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary ml-auto">Enviar</button>
+                        <!-- Se quiser colocar um popover como uma ajuda pra preencher o formulário é uma ideia também, só pesquisar mais sobre -->
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
 
     <!-- Modal -->
-
     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
